@@ -1,0 +1,9 @@
+server:
+  port: 8761 #Port eureka server is going to listen on
+
+eureka:
+  client:
+    register-with-eureka: false # don't register with eureka service. - because this is the eureka service.
+    fetch-registry: false # don't cache registry information locally.
+  server:
+    wait-time-in-ms-when-sync-empty: 5 # Intiail time to wait before sever takes requests
